@@ -8,13 +8,16 @@ import '../styles/TopicList.scss';
 const TopicList = (props) => {
 
   const mappedTopics = () => {
-    return props.topics.map((topic) => {
+    const { topics } = props.state;
+
+    return props.state.topics.map((topic) => {
       return <TopicListItem
         key={topic.id}
         thisTopic={topic}
         state={props.state}
         onLoadTopic={props.onLoadTopic}
-        setPhotos={ props.setPhotos }/>;
+        getPhotoByTopic={props.getPhotoByTopic}
+      />;
     });
   };
 

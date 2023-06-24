@@ -10,13 +10,13 @@ const PhotoListItem = (props) => {
   return (
     <span className='photo-list__item'>
       <span onClick={()=>{
-        props.updateToFavPhotoIds(props.photo.id);
+        props.updateFavPhotoIds(props.photo.id);
       }}>
         <PhotoFavButton
           key={`Photo ${props.photo.id}`}
           photo={props.photo}
           state={ props.state }
-          updateToFavPhotoIds={ props.updateToFavPhotoIds }
+          updateFavPhotoIds={ props.updateFavPhotoIds }
           openModalWindow={ props.openModalWindow }
           closeModalWindow={ props.closeModalWindow }/>
       </span>
@@ -40,7 +40,7 @@ const PhotoListItem = (props) => {
     </span>
 
   );
-  
+
 };
 
 PhotoListItem.defaultProps = {

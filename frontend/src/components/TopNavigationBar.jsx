@@ -10,12 +10,12 @@ const TopNavigation = (props) => {
     <div className="top-nav-bar">
       <span className="top-nav-bar__logo">PhotoLabs</span>
       <TopicList
-        state={ props.state }
-        onLoadTopic={ props.onLoadTopic }
-        topics={ props.topics }
-        setPhotos={ props.setPhotos }/>
+        state={props.state}
+        onLoadTopic={props.onLoadTopic}
+        getPhotoByTopic={props.getPhotoByTopic}
+      />
       <FavBadge
-        isFavPhotoExist={props.state.likes.length ? true : false}/>
+        isFavPhotoExist={props.state.likes.length ? true : false} />
     </div>
   );
 };

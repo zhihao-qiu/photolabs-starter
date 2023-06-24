@@ -11,17 +11,14 @@ const HomeRoute = (props) => {
       <TopNavigation
         state = { props.state }
         onLoadTopic={props.onLoadTopic}
-        topics={props.topics}
-        setPhotos={ props.setPhotos }
+        getPhotoByTopic={props.getPhotoByTopic}
       />
 
       <PhotoList
         state={ props.state }
-        updateToFavPhotoIds={ props.updateToFavPhotoIds }
+        updateFavPhotoIds={ props.updateFavPhotoIds }
         openModalWindow={ props.openModalWindow }
         closeModalWindow={ props.closeModalWindow }
-        photos={props.photos}
-        setPhotos={ props.setPhotos }
       />
     </div>
   );
