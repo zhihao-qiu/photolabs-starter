@@ -68,3 +68,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Dependencies
+
+- React
+- React-dom
+- Axios
+- Node 5.10.x or above
+
+### Final Product
+- Display all photos
+
+!["Display all photos"](pic/display_all_photos.png)
+
+- Move the focus on the topic
+
+!["Focus on topic"](pic/focus_on_topic.png)
+
+- Click on topic, to show different photos
+
+!["Photos under topic"](pic/photos_under_topic.png)
+
+- Click on photo, to enlarge, with similar photos
+
+!["Photo to enlarge"](pic/photo_to_enlarge.png)
+!["Photo to enlarge"](pic/photo_with_similar.png)
+
+- Click on heart to like the photo, no matter the photos is in the list, or the enlarged one.
+- Meanwhile, you will see a yellow dot on the heart at the top right corner
+
+!["Like the photo"](pic/like_the_photo.png)
+
+
