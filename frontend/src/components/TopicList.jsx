@@ -3,8 +3,6 @@ import React from 'react';
 import TopicListItem from './TopicListItem';
 import '../styles/TopicList.scss';
 
-// import topics from '../mocks/topics';
-
 const TopicList = (props) => {
 
   const mappedTopics = () => {
