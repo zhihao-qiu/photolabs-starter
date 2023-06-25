@@ -33,15 +33,15 @@ export default function reducer(state, action) {
         ...state,
         photos: action.payload,
       };
-    case 'GET_PHOTOS':
+    case 'LOAD_PAGE':
       return {
         ...state,
-        photos: action.payload,
+        topics: action.payload[0].data,
+        photos: action.payload[1].data,
       };
     case 'GET_TOPICS':
       return {
         ...state,
-        topics: action.payload,
       };
     default:
       return state;
