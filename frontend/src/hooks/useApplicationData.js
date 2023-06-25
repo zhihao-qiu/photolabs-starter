@@ -32,8 +32,8 @@ export default function useApplicationData() {
 
   // retrieve photos and topics
   useEffect(() => {
-    const topicsURL = 'http://localhost:8001/api/topics';
-    const photosURL = 'http://localhost:8001/api/photos';
+    const topicsURL = '/api/topics';
+    const photosURL = '/api/photos';
     const topicsPromise = axios.get(topicsURL);
     const photosPromise = axios.get(photosURL);
 
@@ -48,7 +48,7 @@ export default function useApplicationData() {
 
   const getPhotoByTopic = (topic) => {
     axios
-      .get('http://localhost:8001/api/topics/photos/' + topic.id)
+      .get('/api/topics/photos/' + topic.id)
       .then((response) => {
         dispatch({ type: 'GET_PHOTO_BY_TOPICS', payload: response.data });
       })
